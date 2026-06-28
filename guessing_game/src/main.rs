@@ -16,7 +16,7 @@ fn main() {
 
     io::stdin()
         .read_line(&mut guess)
-        .expect("Failed to read line");
+        .expect("Failed to read line buddy");
 
     let guess: u32 = match guess.trim().parse() {
         Ok(num) => num,
