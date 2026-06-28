@@ -51,4 +51,10 @@ fn main() {
             
             m += 1;
         }
+
+
+        for number in (1..4).rev() {
+            println!("{number}!");
+        }
+        println!("LIFTOFF!!!");
 }
