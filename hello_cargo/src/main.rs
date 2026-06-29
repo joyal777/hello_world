@@ -63,9 +63,14 @@ fn main() {
 
         println!{"{}", s};
 
-        let s1 = String::from("hello");
-        let s2 = s1.clone();
-        println!{"{s2}, world!"};
+        let s1 = gives_ownership();        // gives_ownership moves its return
+                                       // value into s1
+
+        let s2 = String::from("hello");    // s2 comes into scope
+
+        let s3 = takes_and_gives_back(s2); // s2 is moved into
+                                        // takes_and_gives_back, which also
+                                        // moves its return value into s3
 
         let st = String::from("hello");  // st comes into scope
 
