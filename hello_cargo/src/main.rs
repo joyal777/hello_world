@@ -66,4 +66,15 @@ fn main() {
         let s1 = String::from("hello");
         let s2 = s1.clone();
         println!{"{s2}, world!"};
+
+        let st = String::from("hello");  // st comes into scope
+
+        takes_ownership(st);             // st's value moves into the function...
+                                        // ... and so is no longer valid here
+
+        let xb = 5;                      // xb comes into scope
+
+        makes_copy(xb);                  // Because i32 implements the Copy trait,
+                                        // xb does NOT move into the function,
+                                        // so it's okay to use xb afterward.
 }
