@@ -62,4 +62,8 @@ fn main() {
         s.push_str(", world!"); // push_str() appends a literal to a String
 
         println!{"{}", s};
+
+        let s1 = String::from("hello");
+        let s2 = s1.clone();
+        println!{"{s2}, world!"};
 }
