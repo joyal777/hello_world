@@ -95,9 +95,9 @@ fn gives_ownership() -> String {       // gives_ownership will move its
 }
 
 // This function takes a String and returns a String.
-fn takes_and_gives_back(b_string: String) -> String {
-    // b_string comes into
+fn takes_and_gives_back(c_string: String) -> String {
+    // c_string comes into
     // scope
 
-    b_string  // b_string is returned and moves out to the calling function
+    c_string  // c_string is returned and moves out to the calling function
 }
