@@ -58,7 +58,7 @@ fn main() {
         }
         println!("LIFTOFF!!!");
 
-        let mut s = String::from("hello");
+        let mut s = String::from("helloi");
         s.push_str(", world!"); // push_str() appends a literal to a String
 
         println!{"{}", s};
@@ -66,13 +66,13 @@ fn main() {
         let s1 = gives_ownership();        // gives_ownership moves its return
                                        // value into s1
 
-        let s2 = String::from("hello");    // s2 comes into scope
+        let s2 = String::from("helloi");    // s2 comes into scope
 
         let s3 = takes_and_gives_back(s2); // s2 is moved into
                                         // takes_and_gives_back, which also
                                         // moves its return value into s3
 
-        let st = String::from("hello");  // st comes into scope
+        let st = String::from("helloi");  // st comes into scope
 
         takes_ownership(st);             // st's value moves into the function...
                                         // ... and so is no longer valid here
