@@ -56,7 +56,7 @@ fn main() {
         for number in (1..4).rev() {
             println!("{number}!");
         }
-        println!("LIFTOFF!!! tadah");
+        println!("LIFTOFF!!! tadah haha");
 
         let mut s = String::from("helloiiiiiii");
         s.push_str(", world!"); // push_str() appends a literal to a String
