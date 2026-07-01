@@ -58,7 +58,7 @@ fn main() {
         }
         println!("LIFTOFF!!! tadah");
 
-        let mut s = String::from("helloi");
+        let mut s = String::from("helloiii");
         s.push_str(", world!"); // push_str() appends a literal to a String
 
         println!{"{}", s};
