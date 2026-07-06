@@ -6,6 +6,7 @@ mod solution;
 use master::Master;
 use solution::Solution;
 
+#[derive(Debug)]
 struct Rectangle {
     width: u32,
     height: u32,
@@ -23,7 +24,7 @@ fn main() {
         height: 6743,
     };
 
-    println!("The area of the rectangle is {} square pixels.", area(&rect1));
+    println!("The area of the rectagle struct is {rect1:#?}  and the rectangle is {} square pixels.", area(&rect1));
 
 
     let word_list = vec![
