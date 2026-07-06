@@ -6,7 +6,26 @@ mod solution;
 use master::Master;
 use solution::Solution;
 
+struct Rectangle {
+    width: u32,
+    height: u32,
+}
+
+fn area(rectangle: &Rectangle) -> u32 {
+    rectangle.width * rectangle.height
+}
+
 fn main() {
+
+
+    let rect1 = Rectangle {
+        width: 123,
+        height: 6743,
+    };
+
+    println!("The area of the rectangle is {} square pixels.", area(&rect1));
+
+
     let word_list = vec![
         String::from("ccbazz"),
         String::from("eiowzz"),
@@ -23,4 +42,5 @@ fn main() {
     
     // Run the solution
     Solution::find_secret_word(word_list, &master_instance);
+    
 }

@@ -1,5 +1,7 @@
-C:\Users\joyal\Projects\Rust\hello_world\guessing_game\target\debug\deps\guessing_game.d: src\main.rs
+C:\Users\joyal\Projects\Rust\hello_world\guessing_game\target\debug\deps\guessing_game.d: src\main.rs src\master.rs src\solution.rs
 
-C:\Users\joyal\Projects\Rust\hello_world\guessing_game\target\debug\deps\guessing_game.exe: src\main.rs
+C:\Users\joyal\Projects\Rust\hello_world\guessing_game\target\debug\deps\guessing_game.exe: src\main.rs src\master.rs src\solution.rs
 
 src\main.rs:
+src\master.rs:
+src\solution.rs:
