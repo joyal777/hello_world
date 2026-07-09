@@ -2,6 +2,10 @@
 mod master;
 mod solution;
 
+mod rectangle;
+
+use rectangle::area_new;
+
 // 2. Bring them into scope so we can use them easily
 use master::Master;
 use solution::Solution;
@@ -43,5 +47,13 @@ fn main() {
     
     // Run the solution
     Solution::find_secret_word(word_list, &master_instance);
+
+    let width1 = 30;
+    let height1 = 50;
+
+    println!(
+        "The area of the rectangle is {} square pixels.",
+        area_new(width1, height1)
+    );
     
 }
